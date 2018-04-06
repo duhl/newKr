@@ -65,11 +65,26 @@ module.exports = {
         ],
         include: ['/src/', '/node_modules/element-ui/lib/']
       },
+
       {
         test: /\.less$/,
         loader: [
           'style-loader', 'css-loader', 'less-loader'
         ],
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
   }
