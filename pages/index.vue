@@ -2,7 +2,8 @@
   <section>
 
       <header-box/>
-      
+      <theme/>
+      <classified-nav/>
       
 
   </section>
@@ -11,10 +12,14 @@
 <script>
 // import AppLogo from "~/components/AppLogo.vue";
 import HeaderBox from "~/components/HeaderBox.vue";
+import Theme from "~/components/Theme.vue";
+import ClassifiedNav from "~/components/ClassifiedNav.vue";
 
 export default {
   components: {
-    HeaderBox
+    HeaderBox,
+    Theme,
+    ClassifiedNav
   }
 };
 </script>

@@ -21,15 +21,23 @@ module.exports = {
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
+    }, {
+      rel: 'stylesheet',
+      type: 'text/css',
+      href: '//at.alicdn.com/t/font_618722_t3nlmpm7qfe6ogvi.css'
     }]
   },
-  css: ['~assets/css/normal.css'],
+  css: ['~assets/css/normal.css', 'element-ui/lib/theme-chalk/index.css'],
   /*
    ** Customize the progress bar color
    */
   loading: {
     color: '#3B8070'
   },
+  plugins: [{
+    src: '~plugins/element-ui',
+    ssr: false
+  }],
   /*
    ** Build configuration
    */
@@ -86,6 +94,7 @@ module.exports = {
           }
         }
       }
-    ]
+    ],
+    vendor: ['element-ui']
   }
 }

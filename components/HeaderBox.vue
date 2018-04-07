@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main 1shadow">
     <section class="header-box">
         <div class="logo"></div>
         <div class="nav">
@@ -20,7 +20,6 @@
 .main {
   width: 100%;
   background-color: white;
-  box-shadow: 0px 3px 9px 0px rgb(194, 194, 194);
   .header-box {
     width: 1000px;
     height: 80px;
@@ -58,5 +57,8 @@
       }
     }
   }
+}
+.main.shadow {
+  box-shadow: 0px 3px 9px 0px rgb(194, 194, 194);
 }
 </style>
