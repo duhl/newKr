@@ -4,23 +4,41 @@
       <header-box/>
       <theme/>
       <classified-nav/>
+      <product-list :data-list="dataList"/>
+      <footer-box/>
       
 
   </section>
 </template>
 
 <script>
-// import AppLogo from "~/components/AppLogo.vue";
 import HeaderBox from "~/components/HeaderBox.vue";
-import Theme from "~/components/Theme.vue";
-import ClassifiedNav from "~/components/ClassifiedNav.vue";
+import Theme from "~/components/Home/Theme.vue";
+import ClassifiedNav from "~/components/Home/ClassifiedNav.vue";
+import ProductList from "~/components/Home/ProductList.vue";
+import FooterBox from "~/components/FooterBox.vue";
+import dataProductlist from "~/static/data/home/product_list.js";
 
 export default {
+  data() {
+    return {};
+  },
   components: {
     HeaderBox,
+    FooterBox,
     Theme,
-    ClassifiedNav
-  }
+    ClassifiedNav,
+    ProductList
+  },
+  computed: {
+    dataList() {
+      return dataProductlist.data;
+    }
+  },
+  mounted() {
+    console.log(this.dataList);
+  },
+  methods: {}
 };
 </script>
 
