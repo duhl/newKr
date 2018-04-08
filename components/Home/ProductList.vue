@@ -42,13 +42,17 @@ export default {
     justify-content: space-between;
     flex-flow: wrap;
     ul {
+      position: relative;
       width: 225px;
       border-radius: 4px;
+      border: 3px solid transparent;
       overflow: hidden;
       background: white;
       padding-bottom: 10px;
       margin-bottom: 35px;
       font-size: 15px;
+      cursor: pointer;
+      transition: all 0.5s;
       li {
         padding: 0;
         img {
@@ -64,6 +68,11 @@ export default {
         line-height: 25px;
         color: #02c2ec;
       }
+    }
+    ul:hover {
+      border: 3px solid rgb(148, 227, 230);
+      transform: scale(1.02);
+      transition: all 0.3s;
     }
   }
 }

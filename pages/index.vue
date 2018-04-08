@@ -1,13 +1,10 @@
 <template>
   <section>
-
       <header-box/>
       <theme/>
       <classified-nav/>
       <product-list :data-list="dataList"/>
       <footer-box/>
-      
-
   </section>
 </template>
 
