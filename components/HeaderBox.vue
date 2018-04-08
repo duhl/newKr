@@ -52,7 +52,7 @@
       }
       li:hover {
         // background: #f2fafb;
-        background: #6a7779;
+        background: #666;
         color: white;
       }
     }
